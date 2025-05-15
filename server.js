@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 
 // Cấu hình bảo mật
-const API_KEY = process.env.API_KEY || "your-api-key-here" // Sử dụng biến môi trường
+const API_KEY = process.env.API_KEY || "nam123" // Sử dụng biến môi trường
 const SECRET_KEY = process.env.SECRET_KEY || "your-secret-key-here" // Khóa bí mật để mã hóa
 
 // Cơ sở dữ liệu người dùng đơn giản (trong thực tế nên sử dụng cơ sở dữ liệu thực)
