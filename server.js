@@ -14,7 +14,7 @@ const SECRET_KEY = process.env.SECRET_KEY || "your-secret-key-here" // Khóa bí
 // Cơ sở dữ liệu người dùng đơn giản (trong thực tế nên sử dụng cơ sở dữ liệu thực)
 const users = {
   // Mật khẩu và thông tin người dùng
-  "admin-password": {
+  "nam123": {
     role: "admin",
     expiryDays: 30,
     active: true,
@@ -196,5 +196,5 @@ app.post("/admin/add-user", (req, res) => {
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log(`API server running on port ${PORT}`)
-  console.log(`Available passwords: ${Object.keys(users).join(", ")}`)
+  console.log(`Available passwords: nam123 ${Object.keys(users).join(", ")}`)
 })
